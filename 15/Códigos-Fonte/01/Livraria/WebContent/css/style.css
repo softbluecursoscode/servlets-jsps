@@ -1,0 +1,422 @@
+/*  This template was created by Mantis-a [http://www.mantisa.cz/]. For more templates visit Free website templates [http://www.mantisatemplates.com/]. */
+
+
+
+/* CSS Document */
+
+
+/* General */
+
+* {
+margin: 0;
+padding: 0;
+}
+
+html {
+height: 100%;
+font-size: 62.5%;
+}
+
+body {
+height: 100%;
+text-align: center;
+font: 1.2em Verdana, Arial, Helvetica, sans-serif;
+min-width: 950px;
+}
+
+#main {
+width: 100%;
+background: url('../img/main-bg.gif') repeat-y center 0;
+min-height: 100%;
+height: 100%;
+position: relative;
+}
+ 
+body>#main {
+height: auto;
+}
+
+a:link, a:visited {
+color: #2E6400;
+text-decoration: underline;
+font-weight: bold;
+}
+
+a:hover {
+text-decoration: none;
+}
+
+.cleaner {
+clear: both;
+height: 0;
+font-size: 0;
+visibility: hidden;
+content: ' ';
+}
+
+.cleaning-box { 
+min-height: 1px;
+}
+
+.cleaning-box:after {
+display: block; 
+clear: both; 
+visibility: hidden; 
+height: 0; 
+font-size: 0; 
+content: ' ';
+}
+
+.noscreen {
+display: none;
+}
+
+.hidden { /* Skip menu */
+position: absolute;
+top: -10000px;
+left: 0;
+width: 1px;
+height: 1px;
+overflow: hidden;
+}
+
+
+/* Paragraphs, headings, ... */
+
+p {
+line-height: 170%;
+margin-bottom: 10px;
+color: #163000;
+}
+
+h1 {
+font-size: 2.8em;
+font-weight: normal;
+color: #FFFFFF;
+text-align: left;
+padding: 49px 0 0 42px;
+background: url('../img/h1-bg-flame.png') no-repeat 0 43px;
+}
+
+h1 a:link, h1 a:visited {
+font-weight: normal;
+text-decoration: none;
+color: #FFFFFF;
+}
+
+h2 {
+font-size: 1.6em;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+color: #FFFFFF;
+text-align: left;
+margin: 3px 0 0 2px;
+}
+
+h3 {
+font-size: 1.4em;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-weight: normal;
+color: #295B00;
+letter-spacing: 1px;
+padding-bottom: 3px;
+border-bottom: 1px solid #295B00;
+margin-bottom: 7px;
+}
+
+address {
+font-style: normal;
+line-height: 180%;
+margin-left: 7px;
+}
+
+/* Images */
+
+img.float {
+float: left;
+border: 1px solid #295B00;
+margin: 0.5em 0.8em 0.5em 0;
+}
+
+
+/* Header */
+
+#header {
+height: 198px;
+position: relative;
+background: #285800 url('../img/hd-bg.gif') repeat-x 0 0;
+}
+
+#header-in {
+width: 900px;
+height: 198px;
+position: relative;
+margin: 0 auto;
+}
+
+ul#navigation {
+float: right;
+margin: 8px 1px 0 0;
+display: inline;
+color: #FFFFFF;
+}
+
+ul#navigation li {
+float: left;
+display: inline;
+list-style-type: none;
+text-align: center;
+font-size: 0.9em;
+}
+
+ul#navigation li a, ul#navigation li a:visited {
+text-decoration: none;
+color: #FFFFFF;
+font-weight: normal;
+}
+
+ul#navigation li a:hover {
+text-decoration: underline;
+}
+
+li#house {
+background: url('../img/house.gif') no-repeat 0 1px;
+padding-left: 24px;
+}
+
+li#house a {
+margin-right: 16px;
+}
+
+li#sitemap {
+background: url('../img/sitemap.gif') no-repeat 0 2px;
+padding-left: 24px;
+margin-left: 16px;
+}
+
+li#sitemap a {
+margin-right: 16px;
+}
+
+li#envelope {
+background: url('../img/envelope.gif') no-repeat 0 2px;
+padding-left: 23px;
+margin-left: 16px;
+}
+
+/* Menu */
+
+#menu-box {
+background: #4A4A4A url('../img/menu-bg.gif') repeat-x 0 0;
+border-bottom: 3px solid black;
+}
+
+#menu {
+width: 950px;
+margin: 0 auto;
+}
+
+#menu li {
+display: inline;
+list-style-type: none;
+text-align: center;
+}
+
+#menu li.first a {
+margin-left: 1.6em;
+display: inline;
+}
+
+#menu li a {
+float: left;
+color: #FFFFFF;
+font-weight: bold;
+font-size: 1.1em;
+display: block;
+padding: 0.9em 1.4em 0.7em 1.4em;
+}
+
+#menu li a:hover, #menu li a.active {
+color: #000000;
+background-color: #DFF300;
+font-weight: bold;
+font-size: 1.1em;
+}
+
+
+/* Content box */
+
+#content {
+background: #FFFFFF url('../img/content-bg.gif') repeat-x 0 0;
+min-height: 624px;
+}
+
+#content-box {
+width: 950px;
+
+margin: 0 auto;
+background-color: #FFFFFF;
+text-align: left;
+border-right: 1px solid #B0B0B0;
+border-left: 1px solid #B0B0B0;
+padding-bottom: 80px;
+min-height: 544px;
+}
+
+#content-box-in-left {
+width: 100%;
+float: left;
+background-color: #FFFFFF;
+}
+
+#content-box-in-left-in {
+margin: 1.8em 1em 1em 1.8em;
+}
+
+/* Table */
+
+table {
+font-size: 1.1em;
+border-collapse: collapse;
+border: 2px solid #2C5D00;
+margin: 15px 0 20px 0;
+table-layout: fixed;
+width: 90%;
+}
+
+.tableB {
+font-size: 1.1em;
+border-collapse: collapse;
+border: 0px;
+margin: 0px 0 0px 0;
+table-layout: fixed;
+width: 100%;
+}
+
+.thB {
+padding: 3px 13px;
+border: 0px solid #2C5D00;
+}
+
+th, td {
+padding: 3px 13px;
+border: 1px solid #2C5D00;
+}
+
+th {
+text-align: right;
+font-weight: bold;
+}
+
+td {
+text-align: right;
+}
+
+.first-row {
+background: #F4FF7C;
+}
+
+.first-row th {
+text-align: center;
+font-weight: bold;
+border-bottom: 2px solid #2C5D00;
+}
+
+.first-column {
+background: #FFD162;
+border-right: 1px solid #2C5D00;
+}
+
+.last-column {
+background-color: #FFD162;
+border-left: 1px solid #2C5D00;
+}
+
+#footer {
+width: 100%;
+height: 60px;
+background: #285800 url('../img/footer-bg.gif') repeat-x 0 0;
+
+/*
+position: absolute;
+bottom: 0;
+left: 0;
+*/
+}
+
+#footer-in {
+width: 950px;
+margin: 0 auto;
+
+}
+
+p.footer-left {
+float: left;
+width: 450px;
+color: #FFFFFF;
+text-align: left;
+margin: 9px 0 0 15px;
+display: inline;
+}
+
+p.footer-left a, p.footer-left a:visited {
+color: #FFFFFF;
+padding: 1px 2px;
+}
+
+p.footer-left a:hover {
+background-color: #FFFFFF;
+color: #2E6600;
+}
+
+p.footer-right {
+float: right;
+width: 450px;
+color: #FFFFFF;
+text-align: right;
+margin: 9px 15px 0 0;
+display: inline;
+}
+
+p.footer-right a, p.footer-right a:visited {
+color: #FFFFFF;
+padding: 1px 2px;
+}
+
+p.footer-right a:hover {
+background-color: #FFFFFF;
+color: #2E6600;
+}
+
+p.footer-right a, p.footer-right a:visited  {
+font-weight: normal;
+}
+
+.button {
+	padding: 3px;
+	background-color: #FFFFFF;
+}
+
+.livro_titulo {
+	color: #295B00;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.livro_autor {
+	font-size: 16px;
+	font-style: italic;
+}
+
+.livro_info {
+	font-size: 14px;
+}
+
+.livro_preco {
+	font-weight: bold;
+}
+
+.erro {
+	color: #F80000;
+	font-weight: bold;
+}

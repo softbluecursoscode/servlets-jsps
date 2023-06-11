@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="hibernate">
+	<class name="Cliente" table="cliente">
+		<id name="id" column="id" length="10">
+			<generator class="native" />
+		</id>
+
+		<property name="nome" column="nome" not-null="true" />
+		
+		<one-to-one name="rg" />
+		
+		<set name="livros" table="emprestimo" inverse="true">
+			<key column="cliente_id" />
+			<many-to-many column="livro_id" class="Livro" />
+		</set>
+		
+	</class>
+</hibernate-mapping>

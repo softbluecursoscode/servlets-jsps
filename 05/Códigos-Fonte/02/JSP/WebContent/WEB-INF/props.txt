@@ -1,0 +1,4 @@
+debug = false
+name = Sistema 1.0
+email = admin@sistema.com
+error = true

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD//EN"
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.driver_class">
+      com.mysql.cj.jdbc.Driver
+    </property>
+    
+    <property name="connection.url">
+      jdbc:mysql://localhost/db?useLegacyDatetimeCode=false&amp;serverTimezone=America/Sao_Paulo&amp;useSSL=false
+    </property>
+
+    <property name="connection.username">root</property>
+    <property name="connection.password">admin</property>
+
+    <property name="dialect">
+      org.hibernate.dialect.MySQL5Dialect
+    </property>
+    
+    <property name="current_session_context_class">thread</property>
+
+    <mapping resource="hibernate/Cliente.hbm.xml" />
+    <mapping resource="hibernate/Livro.hbm.xml" />
+    <mapping resource="hibernate/Editora.hbm.xml" />
+    <mapping resource="hibernate/RG.hbm.xml" />
+    
+  </session-factory>
+</hibernate-configuration>

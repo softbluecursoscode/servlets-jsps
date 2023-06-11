@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="livraria.entity">
+	<class name="Livro" table="livro">
+		<id name="id" column="id" length="10">
+			<generator class="native" />
+		</id>
+
+		<property name="titulo" column="titulo" length="50" not-null="true" />
+		
+		<property name="autor" column="autor" length="50" not-null="true" />
+		
+		<property name="editora" column="editora" length="25" not-null="true" />
+		
+		<property name="ano" column="ano" not-null="true" />
+		
+		<property name="preco" column="preco" not-null="true" />
+	</class>
+</hibernate-mapping>

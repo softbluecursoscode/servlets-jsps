@@ -1,0 +1,27 @@
+/*  This template was created by Mantis-a [http://www.mantisa.cz/]. For more templates visit Free website templates [http://www.mantisatemplates.com/]. */
+
+
+
+/* CSS Document for IE 6 and lower */
+
+
+/* Paragraphs, headings, ... */
+
+h1 {
+background: url('../img/h1-bg-flame.gif') no-repeat 1px 43px;
+}
+
+h2 {
+margin: 3px 0 0 3px;
+}
+
+
+/* Content box */
+
+#content {
+_height: 624px;
+}
+
+#content-box {
+_height: 544px;
+}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="livraria.entity">
+	<class name="Pedido" table="pedido">
+		<id name="id" column="id" length="10">
+			<generator class="assigned" />
+		</id>
+
+		<property name="data" column="data" not-null="true" />
+		
+		<property name="status" column="status" not-null="true" />
+		
+		<property name="valor" column="valor" not-null="true" />
+		
+		<many-to-one name="usuario" class="Usuario" column="usuario_id" />
+		
+		<set name="livros" table="livro_pedido">
+			<key column="id_pedido" />
+			<many-to-many class="Livro" column="id_livro" />
+		</set>
+	</class>
+</hibernate-mapping>

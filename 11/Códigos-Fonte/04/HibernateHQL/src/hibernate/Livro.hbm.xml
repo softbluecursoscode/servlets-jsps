@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="hibernate">
+	<class name="Livro" table="livro">
+		<id name="isbn" column="isbn" length="128">
+			<generator class="assigned" />
+		</id>
+
+		<property name="nome" column="nome" not-null="true" />
+		<property name="autor" column="autor" not-null="true" />
+		
+		<many-to-one name="editora" column="editora_id" />
+		
+		<set name="clientes" table="emprestimo">
+			<key column="livro_id" />
+			<many-to-many column="cliente_id" class="Cliente" />
+		</set>
+		
+	</class>
+</hibernate-mapping>

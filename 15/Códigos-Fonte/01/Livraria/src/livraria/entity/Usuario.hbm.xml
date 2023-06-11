@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="livraria.entity">
+	<class name="Usuario" table="usuario">
+		<id name="id" column="id" length="10">
+			<generator class="native" />
+		</id>
+
+		<property name="email" column="email" length="50" not-null="true" />
+		
+		<property name="senha" column="senha" length="20" not-null="true" />
+		
+		<property name="nome" column="nome" length="50" not-null="true" />
+		
+	</class>
+</hibernate-mapping>

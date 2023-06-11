@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+<servlet>
+    <description></description>
+    <display-name>ListarServlet</display-name>
+    <servlet-name>ListarServlet</servlet-name>
+    <servlet-class>servlet.ListarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListarServlet</servlet-name>
+    <url-pattern>/Listar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>EditarServlet</display-name>
+    <servlet-name>EditarServlet</servlet-name>
+    <servlet-class>servlet.EditarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EditarServlet</servlet-name>
+    <url-pattern>/Editar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>SalvarServlet</display-name>
+    <servlet-name>SalvarServlet</servlet-name>
+    <servlet-class>servlet.SalvarServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>SalvarServlet</servlet-name>
+    <url-pattern>/Salvar</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ExcluirServlet</display-name>
+    <servlet-name>ExcluirServlet</servlet-name>
+    <servlet-class>servlet.ExcluirServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ExcluirServlet</servlet-name>
+    <url-pattern>/Excluir</url-pattern>
+  </servlet-mapping>
+</web-app>

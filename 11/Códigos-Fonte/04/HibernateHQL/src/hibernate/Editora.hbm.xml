@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="hibernate">
+	<class name="Editora" table="editora">
+		<id name="id" column="id">
+			<generator class="native" />
+		</id>
+
+		<property name="nome" column="nome" not-null="true" />
+		
+		<set name="livros" inverse="true">
+			<key column="editora_id" />
+			<one-to-many class="Livro" />
+		</set>
+		
+	</class>
+</hibernate-mapping>

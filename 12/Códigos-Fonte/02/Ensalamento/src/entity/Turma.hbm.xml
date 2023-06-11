@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping>
+	
+	<class name="entity.Turma" table="turma">
+		<id name="id" column="id" type="java.lang.Integer">
+			<generator class="foreign">
+				<param name="property">sala</param>
+			</generator>
+		</id>
+		
+		<one-to-one name="sala" class="entity.Sala" constrained="true" />
+
+		<property name="nome" column="nome" type="java.lang.String" not-null="true" />
+	</class>
+</hibernate-mapping>
